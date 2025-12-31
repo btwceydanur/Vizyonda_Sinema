@@ -16,5 +16,5 @@ Bu proje yerel geliştirme ortamında (localhost) çalışacak şekilde hazırla
 **Not: Projede kullanılan görseller eğitim amaçlıdır.**
 
 **👩‍💻 Geliştiriciler**
-Ceydanur Gezer
-İbrahim Acu
+1. Ceydanur Gezer
+2. İbrahim Acu
