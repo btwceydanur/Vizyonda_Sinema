@@ -1,0 +1,334 @@
+html, body{
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #EFECE3;
+}
+
+
+h1 {
+    font-size: 60px;
+    font-family: "Lucida Handwriting", "Courier New", monospace;
+	display:flex;
+	justify-content: center;
+	background-color:#EFECE3;
+	color:#000000;
+	margin:0;
+}
+
+hr{
+	margin:0;
+}
+
+.ilk_harf {
+    display: inline-block;
+    position: relative;
+    padding-left: 85px; 
+    background-image: url("resimler/bilet.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 130px auto; 
+}
+
+.son_harf {
+    display: inline-block;
+    position: relative;
+    padding-right: 105px;        
+    background-image: url("resimler/bilet_2.png");
+    background-repeat: no-repeat;
+    background-size: 130px auto;
+    background-position: right center;
+}
+
+.menu {
+	background-color: #8FABD4;
+	padding: 14px 0;
+    text-align: center;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+	padding: 10px 28px;
+    line-height: 20px;   
+    display: inline-block;
+	position: relative; 
+	margin: 0 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #C1785A;
+	background-color: #8DA9C4; 
+}
+
+.alt_menu {
+    display: none;
+    position: absolute;
+    background-color: #EDE9E1;
+    min-width: 170px;
+    top: 30px;
+    left: 0;
+    padding: 10px 0;
+    border: 1px solid #3E69A8; 
+    z-index: 1000;
+}
+
+.alt_menu li {
+    display: block;
+    margin: 0;
+}
+
+.alt_menu a {
+	color: #000000; 
+    display: block;
+    padding: 8px 15px;
+    font-size: 18px;
+}
+
+
+.alt_menuler:hover > .alt_menu {
+    display: block;
+	color:#3E69A8;
+}
+
+.footer {
+    background-color: #1f2933;      
+    color: #EDE9E1;
+    font-size: 14px;
+	margin:0;
+}
+
+.footer-icerik {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 20px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-sutun {
+    flex: 1 1 220px;
+}
+
+.footer-sutun h3,
+.footer-sutun h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.footer-sutun ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-sutun li {
+    margin-bottom: 6px;
+}
+
+.footer-sutun a {
+    color: #D9E2EC;
+    text-decoration: none;
+}
+
+.footer-sutun a:hover {
+    text-decoration: underline;
+	color:white;
+}
+
+.footer-alt {
+    border-top: 1px solid rgba(255,255,255,0.35);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+
+.sayfa_ana_baslik{
+    width: 100%;
+	height:80px;
+    margin:0;
+    padding: 0 20px;
+	background-color:#4A70A9;
+	color:white;
+	font-family: "Lucida Console", "Courier New", monospace;
+	display: flex;
+    flex-direction: column;       
+    justify-content: center;      
+
+}
+
+.sayfa_ana_baslik h2 {
+    margin: 0 0 5px 0;
+}
+
+.sayfa_ana_baslik h2 .ilk_harf {
+    display: inline-block;
+    padding-left: 42px; 
+    background-image: url("resimler/biletler.png");
+    background-repeat: no-repeat;
+    background-size: 45px auto;
+}
+
+.sayfa_ana_baslik p {
+    margin: 0;
+    color: black;      
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.9;
+
+}
+
+
+.biletlerim_alani { 
+    max-width: 1100px; 
+    margin: 24px auto 40px; 
+    padding: 24px 28px; 
+    background-color:#1f2933; 
+    border-radius: 18px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+    font-family: "Poppins", Arial, sans-serif; 
+    color:#1f2933; 
+} 
+
+.biletlerim_alani p {  
+    color: white; 
+} 
+
+.mesaj, .hata { 
+    padding: 10px 14px; 
+    border-radius: 8px; 
+    margin-bottom: 14px; 
+    font-size: 14px; 
+} 
+.mesaj { 
+    background-color: #d1fae5; 
+    color: #065f46; 
+    border: 1px solid #6ee7b7; 
+} 
+.hata { 
+    background-color: #fee2e2; 
+    color: #991b1b; 
+    border: 1px solid #fecaca; 
+} 
+.pasif { 
+    color: #6b7280; 
+    font-style: italic; 
+    font-size: 13px; 
+} 
+
+.bilet-tablo { 
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 0 10px; 
+    background-color: transparent; 
+    font-size: 15px; 
+} 
+
+.bilet-tablo thead { 
+    background-color:#6b7280; 
+    color: #ffffff; 
+} 
+
+.bilet-tablo th { 
+    padding: 20px 20px; 
+    font-size: 16px; 
+    font-weight: 600; 
+} 
+.bilet-tablo td { 
+    background: #ffffff; 
+    padding: 16px 18px; 
+    line-height: 1.5; 
+    border-top: 1px solid #e5e7eb; 
+    border-bottom: 1px solid #e5e7eb; 
+} 
+
+.bilet-tablo tbody tr { 
+    background: #ffffff !important; 
+    border-radius: 12px; 
+} 
+
+.bilet-tablo tbody tr:hover td { 
+    background-color: #eef6ff; 
+} 
+
+.durum-aktif, 
+.durum-iptal, 
+.durum-suresi-gecti { 
+    padding: 4px 10px; 
+    border-radius: 999px; 
+    font-weight: 600; 
+    font-size: 12px; 
+    display: inline-block; 
+} 
+.durum-aktif { 
+    background-color: #dcfce7; 
+    color: #166534; 
+} 
+.durum-iptal { 
+    background-color: #fee2e2; 
+    color: #991b1b; 
+} 
+.durum-suresi-gecti { 
+    background-color: #fef3c7; 
+    color: #92400e; 
+} 
+
+.islem-form { 
+    display: inline-block; 
+    margin-right: 6px; 
+} 
+.btn-islem { 
+    padding: 5px 11px; 
+    font-size: 12px; 
+    border-radius: 999px; 
+    border: none; 
+    cursor: pointer; 
+    font-weight: 600; 
+    background-color: #3b82f6; 
+    color: #ffffff; 
+    transition: background-color 0.15s ease, transform 0.1s ease; 
+} 
+.btn-islem
+.btn-iptal { 
+    background-color: #ef4444; 
+} 
+.btn-islem:hover { 
+    transform: translateY(-1px); 
+    filter: brightness(1.06); 
+} 
+
+.geri-btn {
+    display: inline-block;
+    background-color:white; 
+    color:#C1785A;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.geri-btn:hover {
+    background-color: #365580; 
+    transform: translateY(-2px);
+}
+
+.geri-btn:active {
+    transform: translateY(0px);
+}
